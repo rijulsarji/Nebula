@@ -34,9 +34,9 @@ const App = () => {
             All rights reserved
           </Typography.Title>
           <Space>
-            <Link to="/">Home</Link>
-            <Link to="/exchanges">Exchanges</Link>
-            <Link to="/news">News</Link>
+            <Link to="/" style={{ color: "#F2E5D7" }}>Home</Link>
+            <Link to="/exchanges" style={{ color: "#F2E5D7" }}>Exchanges</Link>
+            <Link to="/news" style={{ color: "#F2E5D7" }}>News</Link>
           </Space>
         </div>
       </div>

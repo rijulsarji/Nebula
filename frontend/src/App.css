@@ -24,7 +24,7 @@ a:hover {
 
 .navbar {
     flex: 0.2;
-    background-color: #241c30;
+    background-color: #262322;
 }
 
 .main {
@@ -42,19 +42,20 @@ a:hover {
     margin: 10px;
     height: 100vh;
     margin: 0px;
-    background-color: #241c30;
+    background-color: #262322;
 }
 
 .logo-container {
-    background-color: #241c30;
+    background-color: #262322;
     display: flex;
-    padding: 20px;
-    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
     width: 100%;
 }
 
 .logo {
-    margin: 0 0 0 15px;
+    width: 200px;
+    height: 200px;
 }
 
 .logo a {
@@ -304,6 +305,11 @@ a:hover {
 .news-card {
     min-height: 300px !important;
 }
+.news-card img {
+    max-height: 80px;
+    max-width: 200px;
+    margin-left: 15px;
+}
 
 .news-image-container {
     display: flex !important;
@@ -398,7 +404,7 @@ a:hover {
 }
 
 .footer {
-    background-color: #241c30;
+    background-color: #262322;
     display: flex;
     flex-direction: column;
     padding: 20px;
