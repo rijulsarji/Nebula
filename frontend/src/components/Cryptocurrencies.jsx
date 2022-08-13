@@ -33,11 +33,12 @@ const Cryptocurrencies = ({ simplified }) => { //by default if no value is assed
       <Row gutter={[32, 32]} className="crypto-card-container"> {/* gutters are just spaces */}
         {cryptos?.map((crypto, i) => (
           <Col xs={24} sm={12} lg={6} className="crypto-card" key={i}>
-            <Link to={`/crypto/${crypto.id}`}>
+            <Link to={`/crypto/${i}`}>
               <Card 
                 title={`${crypto.rank}. ${crypto.name}`}
                 extra={<img className='crypto-image' src={crypto.iconUrl} alt="crypto icon" />}
                 hoverable
+                className='cryptocurrency-card'
               >
                 <p>Price: {millify(crypto.price)}</p>
                 <p>Market Cap: {millify(crypto.marketCap)}</p>

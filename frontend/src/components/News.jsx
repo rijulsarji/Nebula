@@ -8,13 +8,13 @@ const { Text, Title } = Typography;
 const { Option } = Select;
 const demoImage = "http://coinrevolution.com/wp-content/uploads/2020/06/cryptonews.jpg";
 
-const News = (simplified) => {
+const News = ({ simplified }) => {
 
   const count = simplified ? 6 : 12;
 
   const [newsCategory, setNewsCategory] = useState("Cryptocurrency");
   const {data: cryptoNews, isFetching} = useGetCryptoNewsQuery({ newsCategory, count});
-  const { data } = useGetCryptosQuery(100);
+  const { data } = useGetCryptosQuery(10);
 
   if(!cryptoNews?.value) return "Loading..."
 
@@ -53,11 +53,11 @@ const News = (simplified) => {
                 <img src={news?.image?.thumbnail?.contentUrl || demoImage} alt="news-image" />
               </div>
               <p>
-                {news.description > 100 ? `${news.description.substring(0,100)} ... ` : news.description}
+                {news.description.length > 150 ? `${news.description.substring(0,150)}... ` : news.description}
               </p>
               <div className='provider-container'>
                 <div>
-                  <Avatar src={news.provider[0]?.image?.thumbnail?.contentUrl || demoImage} alt="" />
+                  <img src={news.provider[0]?.image?.thumbnail?.contentUrl || demoImage} alt="" />
                   <Text className='provider-name'>{news.provider[0]?.name}</Text>
                 </div>
                 <Text>{moment(news.datePublished).startOf('ss').fromNow()}</Text>

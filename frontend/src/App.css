@@ -304,6 +304,7 @@ a:hover {
 
 .news-card {
     min-height: 300px !important;
+    height: 500px;
 }
 .news-card img {
     max-height: 80px;
@@ -332,7 +333,19 @@ a:hover {
 
 .provider-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.provider-container div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.provider-container img {
+    max-width: 40px;
+    border: 2px solid gray;
+    border-radius: 100%;
 }
 
 .provider-name {
@@ -393,6 +406,9 @@ a:hover {
 .crypto-card {
     min-width: 250px;
 }
+.cryptocurrency-card {
+    height: 220px;
+}
 
 .crypto-card .crypto-image {
     width: 35px;
@@ -409,4 +425,10 @@ a:hover {
     flex-direction: column;
     padding: 20px;
     align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .news-card {
+        height: 400px;
+    }
 }
