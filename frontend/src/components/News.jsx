@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Select, Typography, Row, Col, Avatar, Card } from "antd";
+import { Select, Typography, Row, Col, Card } from "antd";
 import moment from 'moment';
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi';
 import { useGetCryptosQuery } from '../services/cryptoApi';
+import Loader from './Loader';
 
 const { Text, Title } = Typography;
 const { Option } = Select;
@@ -13,10 +14,10 @@ const News = ({ simplified }) => {
   const count = simplified ? 6 : 12;
 
   const [newsCategory, setNewsCategory] = useState("Cryptocurrency");
-  const {data: cryptoNews, isFetching} = useGetCryptoNewsQuery({ newsCategory, count});
+  const {data: cryptoNews, isFetching } = useGetCryptoNewsQuery({ newsCategory, count});
   const { data } = useGetCryptosQuery(10);
 
-  if(!cryptoNews?.value) return "Loading..."
+  if (isFetching) return <Loader />;
 
   return (
     <Row gutter={[24, 24]}>
@@ -50,7 +51,7 @@ const News = ({ simplified }) => {
                 <Title level={4} className="news-title">
                   {news.name}
                 </Title>
-                <img src={news?.image?.thumbnail?.contentUrl || demoImage} alt="news-image" />
+                <img src={news?.image?.thumbnail?.contentUrl || demoImage} alt="news icon" />
               </div>
               <p>
                 {news.description.length > 150 ? `${news.description.substring(0,150)}... ` : news.description}

@@ -3,6 +3,7 @@ import millify from 'millify'
 import { Link } from 'react-router-dom';
 import { Card, Row, Col, Input } from 'antd';
 import { useGetCryptosQuery } from '../services/cryptoApi';
+import Loader from './Loader';
 
 const Cryptocurrencies = ({ simplified }) => { //by default if no value is assed, true is passed
 
@@ -20,7 +21,7 @@ const Cryptocurrencies = ({ simplified }) => { //by default if no value is assed
   
 
 
-  if(isFetching) return "Loading..."
+  if(isFetching) return <Loader />
 
   return (
     <>
@@ -31,9 +32,9 @@ const Cryptocurrencies = ({ simplified }) => { //by default if no value is assed
       }
 
       <Row gutter={[32, 32]} className="crypto-card-container"> {/* gutters are just spaces */}
-        {cryptos?.map((crypto, i) => (
-          <Col xs={24} sm={12} lg={6} className="crypto-card" key={i}>
-            <Link to={`/crypto/${i}`}>
+        {cryptos?.map(crypto => (
+          <Col xs={24} sm={12} lg={6} className="crypto-card" key={crypto.uuid}>
+            <Link to={`/crypto/${crypto.uuid}`}>
               <Card 
                 title={`${crypto.rank}. ${crypto.name}`}
                 extra={<img className='crypto-image' src={crypto.iconUrl} alt="crypto icon" />}
