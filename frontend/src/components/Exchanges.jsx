@@ -7,6 +7,7 @@ const Exchanges = () => {
   const {data, isFetching} = useGetCryptosQuery(10);
   if (isFetching) return <Loader />;
 
+  console.log(data);
 
   return (
     <div>Exchanges</div>

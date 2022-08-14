@@ -19,8 +19,6 @@ const Cryptocurrencies = ({ simplified }) => { //by default if no value is assed
     setCryptos(filteredData)
   }, [cryptosList, searchTerm])
   
-
-
   if(isFetching) return <Loader />
 
   return (
@@ -40,6 +38,7 @@ const Cryptocurrencies = ({ simplified }) => { //by default if no value is assed
                 extra={<img className='crypto-image' src={crypto.iconUrl} alt="crypto icon" />}
                 hoverable
                 className='cryptocurrency-card'
+                bodyStyle={{backgroundColor: '#fffbf4'}}
               >
                 <p>Price: {millify(crypto.price)}</p>
                 <p>Market Cap: {millify(crypto.marketCap)}</p>

@@ -27,8 +27,9 @@ a:hover {
 }
 
 .navbar {
-    flex: 0.2;
+    flex: 1;
     background-color: #262322;
+    max-width: 195px;
 }
 
 .main {
@@ -38,14 +39,15 @@ a:hover {
 
 .routes {
     padding: 20px;
+    width: calc(100vw - 210px);
+    background-color: white;
 }
 
 .nav-container {
     position: fixed;
     left: 0;
-    margin: 10px;
     height: 100vh;
-    margin: 0px;
+    min-width: 200px;
     background-color: #262322;
 }
 
@@ -424,6 +426,9 @@ a:hover {
 }
 
 .footer {
+    position: absolute;
+    bottom: 0px;
+    position: static;
     background-color: #262322;
     display: flex;
     flex-direction: column;
