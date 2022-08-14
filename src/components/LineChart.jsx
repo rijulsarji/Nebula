@@ -1,4 +1,6 @@
 import React from 'react';
+// to ignore warning of import next line
+// eslint-disable-next-line
 import { Chart as ChartJS } from "chart.js/auto"; // NOTE: import this for chartjs to work
 import { Line } from "react-chartjs-2";
 import { Row, Col, Typography } from "antd";
