@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Menu, Avatar } from 'antd';
 import { Link } from "react-router-dom";
-import { HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined, MenuOutlined } from "@ant-design/icons";
+import { HomeOutlined, BulbOutlined, FundOutlined, MenuOutlined } from "@ant-design/icons";
 import icon from "../assets/cryptocurrency.png"
 
 const Navbar = () => {
@@ -41,9 +41,10 @@ const Navbar = () => {
           <Menu.Item icon={<FundOutlined className='navbar-icons'/>}>
             <Link to="/cryptocurrencies" style={{ color: "#F2E5D7" }}>Cryptocurrencies</Link>
           </Menu.Item>
-          <Menu.Item icon={<MoneyCollectOutlined className='navbar-icons'/>}>
+          {/* <Menu.Item icon={<MoneyCollectOutlined className='navbar-icons'/>}>
             <Link to="/exchanges" style={{ color: "#F2E5D7" }}>Exchanges</Link>
-          </Menu.Item>
+          </Menu.Item> */}
+          {/* Exchanges api required premium plan */}
           <Menu.Item icon={<BulbOutlined className='navbar-icons'/>}>
             <Link to="/news" style={{ color: "#F2E5D7" }}>News</Link>
           </Menu.Item>

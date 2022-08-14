@@ -14,7 +14,7 @@
 }
 
 a:hover {
-    color: var(--pink) !important;
+    color: white !important;
 }
 
 .navbar-icons {
@@ -51,6 +51,17 @@ a:hover {
     background-color: #262322;
 }
 
+.ant-menu > .ant-menu-item:hover,
+.ant-menu > .ant-menu-submenu:hover,
+.ant-menu > .ant-menu-item-active,
+.ant-menu> .ant-menu-submenu-active,
+.ant-menu > .ant-menu-item-open,
+.ant-menu> .ant-menu-submenu-open,
+.ant-menu > .ant-menu-item-selected,
+.ant-menu > .ant-menu-submenu-selected {
+    background-color: #865544 !important;
+}
+
 .logo-container {
     background-color: #262322;
     display: flex;
@@ -83,6 +94,15 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.heading, .home-title {
+    font-family: 'Roboto Slab', serif;
+}
+.crypto-stats {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -150,6 +170,10 @@ a:hover {
     margin: 30px;
 }
 
+.coin-detail-container p {
+    font-family: 'Roboto', sans-serif;
+}
+
 .coin-heading-container {
     display: flex;
     justify-content: center;
@@ -162,7 +186,8 @@ a:hover {
 }
 
 .coin-heading-container .coin-name {
-    font-weight: 900;
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
     color: var(--pink);
 }
 
@@ -177,6 +202,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .stats-container h2 {
@@ -211,6 +237,9 @@ a:hover {
     font-weight: 800;
 }
 
+.coin-value-statistics-heading {
+    font-family: 'Roboto', sans-serif;
+}
 .coin-value-statistics-heading p {
     font-size: 1rem;
     opacity: 0.9;
@@ -221,6 +250,7 @@ a:hover {
     gap: 40px;
     margin-top: 40px;
     padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .coin-desc-link h2 {
@@ -248,6 +278,7 @@ a:hover {
 .coin-links {
     padding: 0px 20px;
     flex: 0.5;
+    font-family: 'Roboto', sans-serif;
 }
 
 .coin-link {
@@ -306,11 +337,13 @@ a:hover {
 
 .select-news {
     width: 180px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .news-card {
     min-height: 300px !important;
     height: 500px;
+    font-family: 'Roboto', sans-serif;
 }
 .news-card img {
     max-height: 80px;
@@ -362,11 +395,13 @@ a:hover {
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    color: #0071bd;
+    color: var(--pink);
+    font-family: 'Roboto', sans-serif;
 }
 
 .chart-title {
-    color: #0071bd !important;
+    color: var(--pink) !important;
+    margin-top: 20px;
 }
 
 .price-container {
@@ -394,6 +429,7 @@ a:hover {
 
 .show-more {
     margin-top: 0px !important;
+    font-family: 'Roboto', sans-serif;
 }
 
 .exchange-image {
@@ -403,6 +439,7 @@ a:hover {
 .search-crypto {
     margin: 20px auto 30px auto;
     width: 250px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .crypto-card-container {
@@ -414,6 +451,7 @@ a:hover {
 }
 .cryptocurrency-card {
     height: 220px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .crypto-card .crypto-image {
