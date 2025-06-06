@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+<a id="top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# NEBULA  
+*Empower Your Crypto Journey with Real-Time Insights*
 
-## Available Scripts
+![last-commit](https://img.shields.io/github/last-commit/rijulsarji/Nebula?style=flat&logo=git&logoColor=white&color=0080ff)
+![repo-top-language](https://img.shields.io/github/languages/top/rijulsarji/Nebula?style=flat&color=0080ff)
+![repo-language-count](https://img.shields.io/github/languages/count/rijulsarji/Nebula?style=flat&color=0080ff)
 
-In the project directory, you can run:
+**Built with the tools and technologies:**
 
-### `npm start`
+![JSON](https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-000000.svg?style=flat&logo=Markdown&logoColor=white)
+![npm](https://img.shields.io/badge/npm-CB3837.svg?style=flat&logo=npm&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB.svg?style=flat&logo=React&logoColor=black)
+![Axios](https://img.shields.io/badge/Axios-5A29E4.svg?style=flat&logo=Axios&logoColor=white)
+![Chart.js](https://img.shields.io/badge/Chart.js-FF6384.svg?style=flat&logo=chartdotjs&logoColor=white)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Testing](#testing)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Overview
+Nebula is a powerful developer tool designed to simplify the creation of cryptocurrency applications with a robust React-based architecture.
 
-### `npm run build`
+### Why Nebula?
+- 🚀 **React-based Architecture:** Simplifies the development of dynamic user interfaces, making it easier to create responsive applications.  
+- 🌐 **Centralized API Services:** Facilitates seamless interaction with cryptocurrency data and news, reducing the complexity of data management.  
+- 📦 **Redux Toolkit Integration:** Streamlines state management, ensuring efficient data flow and interaction between components.  
+- 📊 **Dynamic Components:** Offers a variety of components for displaying cryptocurrency information, enhancing user engagement and experience.  
+- 📱 **Responsive Design:** Ensures optimal user experience across devices, addressing the need for mobile-friendly applications.  
+- ⏱️ **Real-time Data Updates:** Provides timely insights into cryptocurrency trends and news, helping users make informed decisions.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+This project requires the following dependencies:
+- **Programming Language:** JavaScript  
+- **Package Manager:** npm  
 
-### `npm run eject`
+### Installation
+Build Nebula from source and install dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```sh
+# Clone the repository
+git clone https://github.com/rijulsarji/Nebula
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Navigate to the project directory
+cd Nebula
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Install dependencies
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Usage
+Run the project with:
 
-## Learn More
+```sh
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Testing
+Nebula uses the `{__test_framework__}` test framework. Run the test suite with:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+npm test
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[⬆ Return](#top)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
